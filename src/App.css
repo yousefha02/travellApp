@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* home slides */
+.swiper-button-next{
+right:0 !important
+}
+.swiper-button-prev{
+left: auto !important;
+right: 50px !important;
+}
+.swiper-button-next,
+.swiper-button-prev{
+    background-color: white;
+    top:96% !important;
+    padding: 25px;
+    transition: .3s;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    color: black;
+    font-size: 1rem !important;
+    transition: .3s;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+background-color: #8e44ad;
+}
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after{
+    color:white;
+}
